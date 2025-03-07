@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codeforces Blitz Cup 2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            text-align: center;
+        }
+        
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        
+        nav ul li {
+            margin: 0 10px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 8px 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.2s;
+        }
+        
+        nav ul li a:hover {
+            background: rgba(255, 255, 255, 0.4);
+            transform: scale(1.1);
+        }
+        
+        nav ul li input {
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        
+        .intro h2 {
+            color: white;
+        }
+        
+        .contest-table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        
+        .contest-table th, .contest-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+        }
+        
+        .contest-table th {
+            background: rgba(255, 255, 255, 0.3);
+            color: black;
+        }
+        
+        .contest-table tr:nth-child(even) {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        
+        .toggle-btn {
+            background: #ff5e62;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .toggle-btn:hover {
+            background: #ff9966;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="title.png" width="300">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contest.html">Contests</a></li>
+                <li><a href="leader.html">Leaderboard</a></li>
+                <li><a href="cal.html">Calender</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="reg.html">Register</a></li>
+                <li><input type="text" placeholder="Search..."></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <section class="intro">
+            <h2>Welcome to Codeforces Blitz Cup 2025</h2>
+            <p>
+                Hi Codeforces! As announced earlier, we’re holding an individual competition, the Codeforces Blitz Cup 2025, to celebrate 15 years of Codeforces.
+                The tournament features PvP matches in a novel Blitz format, where every second (literally!) counts. In a 40-minute match, the opponents rush to
+                solve each consecutive problem quicker than the rival. One needs to come up with a correct solution, think over the optimal implementation, and
+                code cleanly: only the first one to get a problem correctly claims the points.
+            </p>
+        </section>
+        
+        <table class="contest-table">
+            <tr>
+                <th>Who</th>
+                <th>Problem</th>
+                <th>Language</th>
+                <th>Verdict</th>
+                <th>Time</th>
+                <th>Memory</th>
+            </tr>
+            <tr>
+                <td>244mh</td>
+                <td>B - Filya and Homework</td>
+                <td>C++23</td>
+                <td style="color:lightgreen; font-weight: bold;">Accepted</td>
+                <td>93 ms</td>
+                <td>1600 KB</td>
+            </tr>
+            <tr>
+                <td>aryanc403</td>
+                <td>B - Filya and Homework</td>
+                <td>C++23</td>
+                <td style="color:red; font-weight: bold;">Too Late</td>
+                <td>77 ms</td>
+                <td>1500 KB</td>
+            </tr>
+        </table>
+    </div>
+    
+    <footer>
+        &copy; 2025 Codeforces. All Rights Reserved.
+    </footer>
+</body>
+</html>

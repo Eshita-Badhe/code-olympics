@@ -1,0 +1,79 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #111;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.navbar a:hover {
+    background-color: #444;
+}
+.navbar input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Form Container */
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Form Styling */
+h2 {
+    color: #f8f8f8;
+}
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+}
+button:hover {
+    background: #6a11cb;
+}
+
+/* Footer */
+.footer {
+    background-color: #000;
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+}

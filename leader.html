@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating - Codeforces</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #4b0082, #b266ff); /* Purple Gradient */
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #2d1b47; /* Dark Purple */
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            color: white;
+            font-size: 24px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        /* Content Layout */
+        .content {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 25%;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        .sidebar h3 {
+            color: #ffccff;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            padding: 5px 0;
+        }
+
+        /* Main Content */
+        .main {
+            width: 70%;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            margin-left: 20px; /* Added space between sidebar and table */
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            color: white;
+            margin-top: 20px; /* Space between heading and table */
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        th {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        td.red-text {
+            color: #ff6666;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            color: white;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        
+        nav ul li {
+            margin: 0 10px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 8px 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.2s;
+        }
+        
+        nav ul li a:hover {
+            background: rgba(255, 255, 255, 0.4);
+            transform: scale(1.1);
+        }
+        
+        nav ul li input {
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="title.png" width="300">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contest.html">Contests</a></li>
+                <li><a href="leader.html">Leaderboard</a></li>
+                <li><a href="cal.html">Calender</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="reg.html">Register</a></li>
+                <li><input type="text" placeholder="Search..."></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="sidebar">
+            <h3>Top Rated</h3>
+            <ul>
+                <li class="red-text">tourist - 3857</li>
+                <li class="red-text">jngly - 3747</li>
+                <li class="red-text">crazywining - 3706</li>
+            </ul>
+            <h3>Top Contributors</h3>
+            <ul>
+                <li>xyz - 165</li>
+                <li>abc - 160</li>
+            </ul>
+        </div>
+        <div class="main">
+            <h2>Ratings: users participated in recent 6 months</h2>
+            <table>
+                <tr>
+                    <th>Rank</th>
+                    <th>Who</th>
+                    <th>Rating</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td class="red-text">tourist</td>
+                    <td>3857</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="red-text">jngly</td>
+                    <td>3747</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="red-text">crazywining</td>
+                    <td>3706</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

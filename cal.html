@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contest Calendar - Codeforces</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #4a0072, #7b1fa2);
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        .header {
+            background-color: #1f1f1f;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 5px;
+            text-align: center;
+        }
+        .day {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 5px;
+            min-height: 80px;
+        }
+        .day.today {
+            background: #ffccff;
+            color: black;
+            font-weight: bold;
+        }
+        .day span {
+            font-size: 14px;
+            display: block;
+        }
+        .events {
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .month-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .month-nav button {
+            background: #ffccff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .empty {
+            visibility: hidden;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        
+        nav ul li {
+            margin: 0 10px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 8px 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.2s;
+        }
+        
+        nav ul li a:hover {
+            background: rgba(255, 255, 255, 0.4);
+            transform: scale(1.1);
+        }
+        
+        nav ul li input {
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="title.png" width="300">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contest.html">Contests</a></li>
+                <li><a href="leader.html">Leaderboard</a></li>
+                <li><a href="cal.html">Calender</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="reg.html">Register</a></li>
+                <li><input type="text" placeholder="Search..."></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="header">Contest Calendar</div>
+    <div class="container">
+        <div class="month-nav">
+            <button>&lt; Prev</button>
+            <h2>March 2025</h2>
+            <button>Next &gt;</button>
+        </div>
+        <div class="calendar">
+            <div class="day">Sun</div>
+            <div class="day">Mon</div>
+            <div class="day">Tue</div>
+            <div class="day">Wed</div>
+            <div class="day">Thu</div>
+            <div class="day">Fri</div>
+            <div class="day">Sat</div>
+
+            <!-- Empty spots for previous month's days -->
+            <div class="day empty"></div>
+            <div class="day empty"></div>
+            <div class="day empty"></div>
+            <div class="day empty"></div>
+            <div class="day empty"></div>
+
+            <!-- March 2025 Days -->
+            <div class="day"><span>1</span><div class="events">ICPC Asia</div></div>
+            <div class="day"><span>2</span><div class="events">Stream: ICPC</div></div>
+            <div class="day"><span>3</span></div>
+            <div class="day"><span>4</span><div class="events">Stream: CF Blitz</div></div>
+            <div class="day"><span>5</span></div>
+            <div class="day"><span>6</span><div class="events">Blitz Cup</div></div>
+            <div class="day"><span>7</span><div class="events">CF Blitz</div></div>
+            <div class="day"><span>8</span><div class="events">Stream: Dynamic</div></div>
+            <div class="day"><span>9</span></div>
+            <div class="day"><span>10</span><div class="events">XIX Olympiad</div></div>
+            <div class="day"><span>11</span><div class="events">CF R (Div. 3)</div></div>
+            <div class="day"><span>12</span></div>
+            <div class="day"><span>13</span></div>
+            <div class="day"><span>14</span></div>
+            <div class="day"><span>15</span></div>
+            <div class="day"><span>16</span></div>
+            <div class="day"><span>17</span><div class="events">Educational CF</div></div>
+            <div class="day"><span>18</span></div>
+            <div class="day"><span>19</span></div>
+            <div class="day"><span>20</span></div>
+            <div class="day"><span>21</span></div>
+            <div class="day"><span>22</span></div>
+            <div class="day"><span>23</span></div>
+            <div class="day"><span>24</span></div>
+            <div class="day"><span>25</span><div class="events">CF R 1006</div></div>
+            <div class="day"><span>26</span></div>
+            <div class="day"><span>27</span><div class="events">Educational CF</div></div>
+            <div class="day"><span>28</span><div class="events">CF R 1007</div></div>
+            <div class="day"><span>29</span></div>
+            <div class="day"><span>30</span></div>
+            <div class="day"><span>31</span></div>
+        </div>
+        <div class="footer">
+            Programming Contests Calendar <br>
+            Events shown in time zone: GMT+05:30 India Standard Time - Kolkata
+        </div>
+    </div>
+</body>
+</html>
